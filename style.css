@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 *{
   margin: 0;
   padding: 0;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header{
@@ -20,4 +26,74 @@
 .logo img{
   max-width: 100%;
   height: 25px;
+}
+
+/*menu-profile*/
+.menu{
+  width: 65%;
+  height: 100vh;
+  background-color: #222d32;
+  color: white;
+  position: absolute;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+
+.profile-img {
+  padding-right: 1rem;
+  display: block;
+  width: 55px;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: 70px;
+}
+
+.status{
+  text-transform: capitalize;
+}
+
+.status::before{
+  content:"";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 5px;
+}
+
+/*menu-list*/
+.link-nav{
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.list-nav{
+  padding-top: 1rem;
+}
+
+.link-nav-arrow::after{
+  content: '\f107';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Pro";
+  padding-left: 1.5rem;
+}
+
+.list-nav-second{
+  display: none;
+}
+
+.icon {
+  width: 2rem;
 }
